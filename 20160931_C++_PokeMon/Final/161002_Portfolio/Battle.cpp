@@ -24,7 +24,7 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 		{
 			cout << endl << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << "\t\t코일 : L 1" << endl;
+			cout << "\t\tCoil : L 1" << endl;
 			cout << "\t│ HP : " << cHealth << endl;
 			cout << "\t└────────->" << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
@@ -46,7 +46,7 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			cout << "\t==----.       =;,;;;,,+X \t\t\t\t\t" << endl;
 			cout << "\t==-;;;=.     .=,;,;,,.,-+\t\t\t\t\t" << endl;
 			cout << "\t,=,;=-;      --;,;,,;=+Xx\t\t\t\t\t" << endl;
-			cout << "\t  ,=x,      ,;.,;,;=x+-. \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\t파이리 : L " << pLevel << endl;
+			cout << "\t  ,=x,      ,;.,;,;=x+-. \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\tChamander : L " << pLevel << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
 			cout << "\t  ;-x     .-;..,,,.-=    \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "│ HP : " << pHealth << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
@@ -59,7 +59,7 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 		{
 			cout << endl << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << "\t\t코일 : L 1" << endl;
+			cout << "\t\tCoil : L 1" << endl;
 			cout << "\t│ HP : " << cHealth << endl;
 			cout << "\t└────────->" << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
@@ -80,7 +80,7 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			cout << "\t        oo-=+---,+Ø$     \t\t\t\t\t" << endl;
 			cout << "\t      +Ø$0=,-°o°°--Ø° .  \t\t\t\t\t" << endl;
 			cout << "\t    oØ0Ø$+oo0 +ØooØø     \t\t\t\t\t" << endl;
-			cout << "\t   ¥ø+--o®o0$Ø øo--,$°   \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\t꼬부기 : L " << pLevel << endl;
+			cout << "\t   ¥ø+--o®o0$Ø øo--,$°   \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\tSquirtle : L " << pLevel << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
 			cout << "\t  $$.-=,0Øoo0$+$++ooØ°   \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "│ HP : " << pHealth << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
@@ -93,7 +93,7 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 		{
 			cout << endl << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << "\t\t코일 : L 1" << endl;
+			cout << "\t\tCoil : L 1" << endl;
 			cout << "\t│ HP : " << cHealth << endl;
 			cout << "\t└────────->" << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
@@ -114,7 +114,7 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			cout << "\t   =+;  ,==, ;xX#++=-+=- =-.       \t\t\t\t" << endl;
 			cout << "\t .==,    ,#- #=.   +#.   --        \t\t\t\t" << endl;
 			cout << "\tX#,   Xx,  =x            xX=       \t\t\t\t" << endl;
-			cout << "\t  -- .#.  +;              ,-=;     \t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\t피카츄 : L " << pLevel << endl;
+			cout << "\t  -- .#.  +;              ,-=;     \t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\tPicachu : L " << pLevel << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
 			cout << "\t.-+++=-  x          .;=-     #=    \t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "│ HP : " << pHealth << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
@@ -126,9 +126,9 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 		// 전투메뉴 UI표시
 		cout << endl << endl;
 		cout << "\t┌──────────────────────┐" <<  "  ┌─────────────────┐" << endl;
-		cout << "\t│ 전투메뉴 선택" << "                              │" << "  │ 아이템                           │" << endl;
-		cout << "\t│  1. 공격   2. 스킬   3.아이템   4.도주     │" << "  │  1. 포션 : " << potion << "개   " << "2. 허브 : " << hub << "개" << "   │" << endl;
-		cout << "\t└──────────────────────┘" << "  └─────────────────┘" << endl << "\t ◎ 메뉴를 선택해주세요 : ";
+		cout << "\t│  Battle Menu" << "                              │" << "  │ Item                           │" << endl;
+		cout << "\t│  1. Attack   2. Skill   3.Item   4.Run away     │" << "  │  1. Potion : " << potion << "   " << "2. Hub : " << hub << " " << "   │" << endl;
+		cout << "\t└──────────────────────┘" << "  └─────────────────┘" << endl << "\t ◎ Select the menu : ";
 		cin >> select; // 전투 메뉴 선택
 		srand(time(NULL));
 
@@ -138,19 +138,19 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
 			if (Event::pSelect == 1)
 			{
-				cout << endl << "\t - 파이리의 꼬리치기 !!" << endl << "\t - "  << pAttack << "의 피해를 입혔다." << endl;
+				cout << endl << "\t - Tail attack of Charmander !!" << endl << "\t - "  << pAttack << " damage." << endl;
 				Beep(500, 150);
 				cHealth = cHealth - pAttack;
 			}
 			if (Event::pSelect == 2)
 			{
-				cout << endl << "\t - 꼬부기의 때리기 !!" << endl << "\t - " << pAttack << "의 피해를 입혔다." << endl;
+				cout << endl << "\t - Attack of Squirtle !!" << endl << "\t - " << pAttack << " damage." << endl;
 				cHealth = cHealth - pAttack;
 				Beep(500, 150);
 			}
 			if (Event::pSelect == 3)
 			{
-				cout << endl << "\t - 피카츄의 할퀴기 공격!!" << endl << "\t - " << pAttack << "의 피해를 입혔다." << endl;
+				cout << endl << "\t - Scratch of Picachu!!" << endl << "\t - " << pAttack << " damage." << endl;
 				cHealth = cHealth - pAttack;
 				Beep(500, 150);
 			}
@@ -162,21 +162,21 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			{
 				if (Event::pSelect == 1)
 				{
-					cout << endl << "\t - 화염방사 스킬 작렬!! " << endl << "\t - " << pPower << "의 피해를 입혔다." << endl;
+					cout << endl << "\t - Fire Breath!! " << endl << "\t - " << pPower << " damage." << endl;
 					Beep(700, 150);
 					cHealth = cHealth - pPower;
 					pSkill = pSkill - 10;
 				}
 				else if (Event::pSelect == 2)
 				{
-					cout << endl << "\t - 물대포 스킬 작렬!! " << endl << "\t - " << pPower << "의 피해를 입혔다." << endl;
+					cout << endl << "\t - Hydro pump!! " << endl << "\t - " << pPower << " damage." << endl;
 					Beep(700, 150);
 					cHealth = cHealth - pPower;
 					pSkill = pSkill - 10;
 				}
 				else if (Event::pSelect == 3)
 				{
-					cout << endl << "\t - 백만볼트 스킬 작렬!! " << endl << "\t - " << pPower << "의 피해를 입혔다." << endl;
+					cout << endl << "\t - Million Bolt Thunder!! " << endl << "\t - " << pPower << " damage." << endl;
 					Beep(700, 150);
 					cHealth = cHealth - pPower;
 					pSkill = pSkill - 10;
@@ -184,13 +184,13 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			}
 			else
 			{
-				cout << "\t - 마나가 없습니다. 다시 선택해주세요.";
+				cout << "\t - Not enough mana.";
 				continue;
 			}
 			break;
 
 		case 3: // 아이템 사용 선택
-			cout << "\t - 1.포션    2. 허브    선택해주세요 : ";
+			cout << "\t - 1.Potion    2. Hun    Select : ";
 			cin >> itemSelect;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
 			switch (itemSelect)
@@ -198,12 +198,12 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			case 1: // 포션 선택
 				if (potion > 0)
 				{
-					cout << "\t - 40 체력이 회복되었습니다." << endl;
+					cout << "\t - 40 HP Healed." << endl;
 					pHealth = pHealth + 40;
 				}
 				else
 				{
-					cout << "\t - 포션이 부족합니다." << endl;
+					cout << "\t - Not enough potion." << endl;
 					Sleep(1000);
 					continue;
 				}
@@ -234,12 +234,12 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			case 2: // 허브 선택
 				if (hub > 0)
 				{
-					cout << "\t - 20 마나가 회복되었습니다." << endl;
+					cout << "\t - 20 mana restore." << endl;
 					pSkill = pSkill + 20;
 				}
 				else
 				{
-					cout << "\t - 허브가 부족합니다." << endl;
+					cout << "\t - Not enough hub." << endl;
 					Sleep(1000);
 					continue;
 				}
@@ -270,7 +270,7 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 			}
 			break;
 		case 4: // 도주 선택
-			cout << "\t - 소년 A는 도주하였습니다" << endl;
+			cout << "\t - Boy A is ran away" << endl;
 			count = 0;
 			break;
 		}
@@ -288,13 +288,13 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 		{
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
 		case 1: // 코일 일반 공격
-			cout << endl << "\t - 코일의 때리기!! " << endl << "\t - " << cAttack << "의 피해를 입었다." << endl;
+			cout << endl << "\t - Attack of Coil!! " << endl << "\t - " << cAttack << " damage." << endl;
 			Beep(500, 150);
 			Sleep(2000);
 			pHealth = pHealth - cAttack;
 			break;
 		case 2: // 코일 스킬 공격
-			cout << endl << "\t - 코일의 전기코일 공격!!" << endl << "\t - " << cPower << "의 피해를 입었다." << endl;
+			cout << endl << "\t - Thunder Attack of Coil!!" << endl << "\t - " << cPower << " damage." << endl;
 			Beep(700, 150);
 			pHealth = pHealth - cPower;
 			Sleep(2000);
@@ -303,7 +303,7 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 
 		if (pHealth <= 0) // 패배 게임오버 이벤트
 		{
-			cout << "\t ◎ 소년 A가 졌습니다." << endl;
+			cout << "\t ◎ Boy A is defeated." << endl;
 			count = 0;
 			Sleep(2000);
 			Event::event_gameOver();
@@ -311,8 +311,8 @@ void Battle::battleCoil() // 코일 포켓몬 전투 함수
 		else if (cHealth <= 0) // 승리 이벤트
 		{
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << endl << "\t ◎ 소년 A가 이겼습니다." << endl;
-			cout << "\t  - 레벨 상승!! HP, MP, 공격력, 스킬 공격력 증가!!" << endl;
+			cout << endl << "\t ◎ Boy A Win." << endl;
+			cout << "\t  - Level up!! HP, MP, atk, skill atk increase!!" << endl;
 			pLevel++;
 			fHealth += 5; fSkill += 10; fAttack += 2; fPower += 3;
 			wHealth += 5; wSkill += 10; wAttack += 2; wPower += 3;
@@ -340,7 +340,7 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 		{
 			cout << endl << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << "\t\t디그다 : L 2" << endl;
+			cout << "\t\tDiglet : L 2" << endl;
 			cout << "\t│ HP : " << dHealth << endl;
 			cout << "\t└────────->" << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
@@ -362,7 +362,7 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			cout << "\t==----.       =;,;;;,,+X \t\t\t\t\t" << endl;
 			cout << "\t==-;;;=.     .=,;,;,,.,-+\t\t\t\t\t" << endl;
 			cout << "\t,=,;=-;      --;,;,,;=+Xx\t\t\t\t\t" << endl;
-			cout << "\t  ,=x,      ,;.,;,;=x+-. \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\t파이리 : L " << pLevel << endl;
+			cout << "\t  ,=x,      ,;.,;,;=x+-. \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\tChamander : L " << pLevel << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
 			cout << "\t  ;-x     .-;..,,,.-=    \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "│ HP : " << pHealth << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
@@ -375,7 +375,7 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 		{
 			cout << endl << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << "\t\t디그다 : L 2" << endl;
+			cout << "\t\ttDiglet : L 2" << endl;
 			cout << "\t│ HP : " << dHealth << endl;
 			cout << "\t└────────->" << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
@@ -397,7 +397,7 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			cout << "\t        oo-=+---,+Ø$     \t\t\t\t\t" << endl;
 			cout << "\t      +Ø$0=,-°o°°--Ø° .  \t\t\t\t\t" << endl;
 			cout << "\t    oØ0Ø$+oo0 +ØooØø     \t\t\t\t\t" << endl;
-			cout << "\t   ¥ø+--o®o0$Ø øo--,$°   \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\t꼬부기 : L " << pLevel << endl;
+			cout << "\t   ¥ø+--o®o0$Ø øo--,$°   \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\tSqirtle : L " << pLevel << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
 			cout << "\t  $$.-=,0Øoo0$+$++ooØ°   \t\t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "│ HP : " << pHealth << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
@@ -410,7 +410,7 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 		{
 			cout << endl << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << "\t\t디그다 : L 2" << endl;
+			cout << "\t\ttDiglet : L 2" << endl;
 			cout << "\t│ HP : " << dHealth << endl;
 			cout << "\t└────────->" << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
@@ -432,7 +432,7 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			cout << "\t   =+;  ,==, ;xX#++=-+=- =-.       \t\t\t\t" << endl;
 			cout << "\t .==,    ,#- #=.   +#.   --        \t\t\t\t" << endl;
 			cout << "\tX#,   Xx,  =x            xX=       \t\t\t\t" << endl;
-			cout << "\t  -- .#.  +;              ,-=;     \t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\t피카츄 : L " << pLevel << endl;
+			cout << "\t  -- .#.  +;              ,-=;     \t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "\tPicachu : L " << pLevel << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
 			cout << "\t.-+++=-  x          .;=-     #=    \t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "│ HP : " << pHealth << endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
@@ -441,11 +441,12 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			cout << "\t  .X## xx  .,==-;          ,+xx=   \t\t\t\t"; SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15); cout << "└────────->" << endl;
 		}
 
+
 		cout << endl << endl;
 		cout << "\t┌──────────────────────┐" << "  ┌─────────────────┐" << endl;
-		cout << "\t│ 전투메뉴 선택" << "                              │" << "  │ 아이템                           │" << endl;
-		cout << "\t│  1. 공격   2. 스킬   3.아이템   4.도주     │" << "  │  1. 포션 : " << potion << "개   " << "2. 허브 : " << hub << "개" << "   │" << endl;
-		cout << "\t└──────────────────────┘" << "  └─────────────────┘" << endl << "\t ◎ 메뉴를 선택해주세요 : ";
+		cout << "\t│  Battle Menu" << "                              │" << "  │ Item                           │" << endl;
+		cout << "\t│  1. Attack   2. Skill   3.Item   4.Run away     │" << "  │  1. Potion : " << potion << "   " << "2. Hub : " << hub << " " << "   │" << endl;
+		cout << "\t└──────────────────────┘" << "  └─────────────────┘" << endl << "\t ◎ Select the menu : ";
 		cin >> select;
 		srand(time(NULL));
 
@@ -453,25 +454,25 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 		{
 		case 1:// 공격 선택
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
+
 			if (Event::pSelect == 1)
 			{
-				cout << endl << "\t - 파이리의 꼬리치기 !!" << endl << "\t - " << pAttack << "의 피해를 입혔다." << endl;
+				cout << endl << "\t - Tail attack of Charmander !!" << endl << "\t - " << pAttack << " damage." << endl;
 				Beep(500, 150);
 				dHealth = dHealth - pAttack;
 			}
 			if (Event::pSelect == 2)
 			{
-				cout << endl << "\t - 꼬부기의 때리기 !!" << endl << "\t - " << pAttack << "의 피해를 입혔다." << endl;
-				Beep(500, 150);
+				cout << endl << "\t - Attack of Squirtle !!" << endl << "\t - " << pAttack << " damage." << endl;
 				dHealth = dHealth - pAttack;
+				Beep(500, 150);
 			}
 			if (Event::pSelect == 3)
 			{
-				cout << endl << "\t - 피카츄의 할퀴기 공격!!" << endl << "\t - " << pAttack << "의 피해를 입혔다." << endl;
-				Beep(500, 150);
+				cout << endl << "\t - Scratch of Picachu!!" << endl << "\t - " << pAttack << " damage." << endl;
 				dHealth = dHealth - pAttack;
+				Beep(500, 150);
 			}
-
 			break;
 		case 2:
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
@@ -479,21 +480,21 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			{
 				if (Event::pSelect == 1)
 				{
-					cout << endl << "\t - 화염방사 스킬 작렬!! " << endl << "\t - " << pPower << "의 피해를 입혔다." << endl;
+					cout << endl << "\t - Fire Breath!! " << endl << "\t - " << pPower << " damage." << endl;
 					Beep(700, 150);
 					dHealth = dHealth - pPower;
 					pSkill = pSkill - 10;
 				}
 				else if (Event::pSelect == 2)
 				{
-					cout << endl << "\t - 물대포 스킬 작렬!! " << endl << "\t - " << pPower << "의 피해를 입혔다." << endl;
+					cout << endl << "\t - Hydro pump!! " << endl << "\t - " << pPower << " damage." << endl;
 					Beep(700, 150);
 					dHealth = dHealth - pPower;
 					pSkill = pSkill - 10;
 				}
 				else if (Event::pSelect == 3)
 				{
-					cout << endl << "\t - 백만볼트 스킬 작렬!! " << endl << "\t - " << pPower << "의 피해를 입혔다." << endl;
+					cout << endl << "\t - Million Bolt Thunder!! " << endl << "\t - " << pPower << " damage." << endl;
 					Beep(700, 150);
 					dHealth = dHealth - pPower;
 					pSkill = pSkill - 10;
@@ -501,13 +502,13 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			}
 			else
 			{
-				cout << "\t - 마나가 없습니다. 다시 선택해주세요.";
+				cout << "\t - Not enough mana.";
 				continue;
 			}
 			break;
 
 		case 3:
-			cout << "\t - 1.포션    2. 허브    선택해주세요 : ";
+			cout << "\t - 1.Potion    2. Hub    Select : ";
 			cin >> itemSelect;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
 			switch (itemSelect)
@@ -515,12 +516,12 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			case 1:
 				if (potion > 0)
 				{
-					cout << "\t - 40 체력이 회복되었습니다." << endl;
+					cout << "\t - 40 HP healed." << endl;
 					pHealth = pHealth + 40;
 				}
 				else
 				{
-					cout << "\t - 포션이 부족합니다." << endl;
+					cout << "\t - Not enough potion." << endl;
 					Sleep(1000);
 					continue;
 				}
@@ -551,12 +552,12 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			case 2:
 				if (hub > 0)
 				{
-					cout << "\t - 20 마나가 회복되었습니다." << endl;
+					cout << "\t - 20 Mana restored." << endl;
 					pSkill = pSkill + 20;
 				}
 				else
 				{
-					cout << "\t - 허브가 부족합니다." << endl;
+					cout << "\t - Not enough hub." << endl;
 					Sleep(1000);
 					continue;
 				}
@@ -587,7 +588,7 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 			}
 			break;
 		case 4:
-			cout << "\t - 플레이어는 도주하였습니다" << endl;
+			cout << "\t - Player ran away" << endl;
 			count = 0;
 			break;
 		}
@@ -604,13 +605,13 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 		{
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 8);
 		case 1:
-			cout << endl << "\t - 디그다의 박치기!! " << endl << "\t - " << dAttack << "의 피해를 입었다." << endl;
+			cout << endl << "\t - Headbutt of diglet!! " << endl << "\t - " << dAttack << " damage." << endl;
 			Beep(500, 150);
 			Sleep(2000);
 			pHealth = pHealth - dAttack;
 			break;
 		case 2:
-			cout << endl << "\t - 디그다의 땅파기 스킬 공격!!" << endl << "\t - " << dPower << "의 피해를 입었다." << endl;
+			cout << endl << "\t - Skill attack of diglet!!" << endl << "\t - " << dPower << " damage." << endl;
 			Beep(700, 150);
 			pHealth = pHealth - dPower;
 			Sleep(2000);
@@ -620,7 +621,7 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 		if (pHealth <= 0)
 		{
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << "\t ◎ 소년 A가 졌습니다. 포켓몬 마스터의 꿈은 끝났습니다." << endl;
+			cout << "\t ◎ Boy A is defeated. His adventure is ended" << endl;
 			count = 0;
 			Sleep(2000);
 			Event::event_gameOver();
@@ -629,8 +630,8 @@ void Battle::battleDigda() // 디그다 전투 이하 코일 전투와 동일한
 		else if (dHealth <= 0)
 		{
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-			cout << endl << "\t ◎ 소년 A가 이겼습니다." << endl;
-			cout << "\t  - 레벨 상승!! HP, MP, 공격력, 스킬 공격력 증가!!" << endl;
+			cout << endl << "\t ◎ Boy A win." << endl;
+			cout << "\t  - Level up!! HP, MP, atk, skill atk increase!!" << endl;
 			pLevel++;
 			fHealth += 5; fSkill += 10; fAttack += 2; fPower += 3;
 			wHealth += 5; wSkill += 10; wAttack += 2; wPower += 3;

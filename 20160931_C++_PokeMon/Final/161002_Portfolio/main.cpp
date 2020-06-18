@@ -18,7 +18,7 @@ void cursor(int n) // 커서 보이기 & 숨기기
 
 void main()
 {
-	SetConsoleTitle(TEXT("소년A의 포켓몬스터")); // 타이틀 제목 변경
+	SetConsoleTitle(TEXT("Pokemon of Boy A")); // 타이틀 제목 변경
 	system("mode con cols=120 lines=55");		// 콘솔 크기 조정
 	cursor(0);	// 커서 표시 삭제
 	Map mp_House;	// 집맵 객체 생성

@@ -17,15 +17,15 @@ void Map::houseMap()
 	if (Event::pSelect == 0)
 	{
 		Map::houseMapDrawing(); // 맵 그림 그리기
-		cout << "오박사 : 빨리 일어나거라. 지우는 이미 떠났단다. <Enter>"; // 이벤트문 출력
+		cout << "Grey Oak : Get up!! Satoshi has gone already. <Enter>"; // 이벤트문 출력
 		Sleep(500);
 		getch(); // 키 입력 시 다음텍스트 출력 (반복)
 		Map::houseMapDrawing();
-		cout << "오박사 : 지우보다 빨리 떠날거라더니 =_=;; <Enter>";
+		cout << "Grey Oak : You said you will go faster than Satoshi =_=;; <Enter>";
 		Sleep(500);
 		getch();
 		Map::houseMapDrawing();
-		cout << "오박사 : 포켓몬 마스터가 되고 싶으면 일단 나에게 오거라. <Enter>";
+		cout << "Grey Oak : If you want to be Pokemon master, come to me <Enter>";
 		Sleep(500);
 		getch();
 	}
@@ -64,11 +64,11 @@ void Map::houseMap()
 							{
 								if (Event::pSelect == 0)
 								{
-									cout << "오박사 : 포켓몬 없이 밖으로 나가는건 위험하단다." << endl;
+									cout << "Grey Oak : Outside is too dangerous without Pokemon." << endl;
 									Sleep(1000);
 									break;
 								}
-								cout << "필드로 나갑니다." << endl;
+								cout << "Go to field." << endl;
 								Sleep(1000);
 								bEsc = 0;
 								break;
@@ -118,11 +118,11 @@ void Map::houseMap()
 							{
 								if (Event::pSelect == 0)
 								{
-									cout << "오박사 : 포켓몬 없이 밖으로 나가는건 위험하단다." << endl;
+									cout << "Grey Oak : Outside is too dangerous without Pokemon." << endl;
 									Sleep(1000);
 									break;
 								}
-								cout << "필드로 나갑니다." << endl;
+								cout << "Go to field." << endl;
 								Sleep(1000);
 								bEsc = 0;
 								break;
@@ -168,11 +168,11 @@ void Map::houseMap()
 							{
 								if (Event::pSelect == 0)
 								{
-									cout << "오박사 : 포켓몬 없이 밖으로 나가는건 위험하단다." << endl;
+									cout << "Grey Oak : Outside is too dangerous without Pokemon." << endl;
 									Sleep(1000);
 									break;
 								}
-								cout << "필드로 나갑니다." << endl;
+								cout << "Go to field." << endl;
 								Sleep(1000);
 								bEsc = 0;
 								break;
@@ -221,11 +221,11 @@ void Map::houseMap()
 							{
 								if (Event::pSelect == 0)
 								{
-									cout << "오박사 : 포켓몬 없이 밖으로 나가는건 위험하단다." << endl;
+									cout << "Grey Oak : Outside is too dangerous without Pokemon." << endl;
 									Sleep(1000);
 									break;
 								}
-								cout << "필드로 나갑니다." << endl;
+								cout << "Go to field." << endl;
 								Sleep(1000);
 								bEsc = 0;
 								break;
@@ -308,9 +308,9 @@ void Map::houseMap()
 			{
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 				cout << "\t┌──────────────────────┐" << endl;
-				cout << "\t│ 포켓몬 정보 : 아직 포켓몬이 없습니다.      │" << endl;
+				cout << "\t│ Information : Don't have Pokemon.      │" << endl;
 				cout << "\t│                                            │" << endl;
-				cout << "\t│ 소지 아이템 : 포션 " << Battle::potion << " , 허브 " << Battle::hub <<
+				cout << "\t│ Item : Potion " << Battle::potion << " , Hub " << Battle::hub <<
 					"\t      │" << endl <<
 					"\t└──────────────────────┘" << endl;
 			}
@@ -319,9 +319,9 @@ void Map::houseMap()
 			{
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 				cout << "\t┌──────────────────────┐" << endl;
-				cout << "\t│ 포켓몬 정보 : "; pOutPut(); cout << "\t\t\t      │" << endl;
-				cout << "\t│ 포켓몬 스탯 : 레벨 = " << Battle::pLevel << " , HP = " << Battle::pHealth << " , MP = " << Battle::pSkill << " │" << endl;
-				cout << "\t│ 소지 아이템 : 포션 " << Battle::potion << " , 허브 " << Battle::hub <<
+				cout << "\t│ Information : "; pOutPut(); cout << "\t\t\t      │" << endl;
+				cout << "\t│ Status : Level = " << Battle::pLevel << " , HP = " << Battle::pHealth << " , MP = " << Battle::pSkill << " │" << endl;
+				cout << "\t│ Item : Potion " << Battle::potion << " , Hub " << Battle::hub <<
 					"\t      │" << endl <<
 					"\t└──────────────────────┘" << endl;
 			}
@@ -384,27 +384,29 @@ void Map::fieldMap()
 	}
 	cout << "\t│                                            │" << endl <<
 		"\t└──────────────────────┘" << endl;
-
-	if (Event::pSelect == 0)// 포켓몬 정보 표시
+	// 포켓몬이 없을 때 정보 출력
+	if (Event::pSelect == 0)
 	{
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 		cout << "\t┌──────────────────────┐" << endl;
-		cout << "\t│ 포켓몬 정보 : 아직 포켓몬이 없습니다.      │" << endl;
+		cout << "\t│ Information : Don't have Pokemon.      │" << endl;
 		cout << "\t│                                            │" << endl;
-		cout << "\t│ 소지 아이템 : 포션 " << Battle::potion << " , 허브 " << Battle::hub <<
+		cout << "\t│ Item : Potion " << Battle::potion << " , Hub " << Battle::hub <<
 			"\t      │" << endl <<
 			"\t└──────────────────────┘" << endl;
 	}
+	// 포켓몬이 있을 때 정보 출력
 	else
 	{
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 		cout << "\t┌──────────────────────┐" << endl;
-		cout << "\t│ 포켓몬 정보 : "; pOutPut(); cout << "\t\t\t      │" << endl;
-		cout << "\t│ 포켓몬 스탯 : 레벨 = " << Battle::pLevel << " , HP = " << Battle::pHealth << " , MP = " << Battle::pSkill << " │" << endl;
-		cout << "\t│ 소지 아이템 : 포션 " << Battle::potion << " , 허브 " << Battle::hub <<
+		cout << "\t│ Information : "; pOutPut(); cout << "\t\t\t      │" << endl;
+		cout << "\t│ Status : Level = " << Battle::pLevel << " , HP = " << Battle::pHealth << " , MP = " << Battle::pSkill << " │" << endl;
+		cout << "\t│ Item : Potion " << Battle::potion << " , Hub " << Battle::hub <<
 			"\t      │" << endl <<
 			"\t└──────────────────────┘" << endl;
 	}
+
 
 	cout << "\t ◎ ";
 
@@ -444,21 +446,21 @@ void Map::fieldMap()
 							}
 							else if (field[y][x - 1] == 'C')
 							{
-								cout << "전투에 진입합니다." << endl;
+								cout << "Go to battle." << endl;
 								Sleep(1000);
 								Battle::battleCoil();
 								break;
 							}
 							else if (field[y][x - 1] == 'D')
 							{
-								cout << "전투에 진입합니다." << endl;
+								cout << "Go to battle." << endl;
 								Sleep(1000);
 								Battle::battleDigda();
 								break;
 							}
 							else if (field[y][x - 1] == 'H')
 							{
-								cout << "집으로 들어갑니다." << endl;
+								cout << "Go home." << endl;
 								Sleep(1000);
 								bEsc = 0;
 								break;
@@ -489,14 +491,14 @@ void Map::fieldMap()
 							}
 							else if (field[y][x + 1] == 'C')
 							{
-								cout << "전투에 진입합니다." << endl;
+								cout << "Go to battle." << endl;
 								Sleep(1000);
 								Battle::battleCoil();
 								break;
 							}
 							else if (field[y][x + 1] == 'D')
 							{
-								cout << "전투에 진입합니다." << endl;
+								cout << "Go to battle." << endl;
 								Sleep(1000);
 								Battle::battleDigda();
 								break;
@@ -528,21 +530,21 @@ void Map::fieldMap()
 							}
 							else if (field[y - 1][x] == 'C')
 							{
-								cout << "전투에 진입합니다." << endl;
+								cout << "Go to battle." << endl;
 								Sleep(1000);
 								Battle::battleCoil();
 								break;
 							}
 							else if (field[y - 1][x] == 'D')
 							{
-								cout << "전투에 진입합니다." << endl;
+								cout << "Go to battle." << endl;
 								Sleep(1000);
 								Battle::battleDigda();
 								break;
 							}
 							else if (field[y - 1][x] == 'H')
 							{
-								cout << "집으로 들어갑니다." << endl;
+								cout << "Go home." << endl;
 								Sleep(1000);
 								bEsc = 0;
 								break;
@@ -575,14 +577,14 @@ void Map::fieldMap()
 							}
 							else if (field[y + 1][x] == 'C')
 							{
-								cout << "전투에 진입합니다." << endl;
+								cout << "Go to battle." << endl;
 								Sleep(1000);
 								Battle::battleCoil();
 								break;
 							}
 							else if (field[y + 1][x] == 'D')
 							{
-								cout << "전투에 진입합니다." << endl;
+								cout << "Go to battle." << endl;
 								Sleep(1000);
 								Battle::battleDigda();
 								break;
@@ -643,23 +645,25 @@ void Map::fieldMap()
 			cout << "\t│                                            │" << endl <<
 				"\t└──────────────────────┘" << endl;
 
+			// 포켓몬이 없을 때 정보 출력
 			if (Event::pSelect == 0)
 			{
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 				cout << "\t┌──────────────────────┐" << endl;
-				cout << "\t│ 포켓몬 정보 : 아직 포켓몬이 없습니다.      │" << endl;
+				cout << "\t│ Information : Don't have Pokemon.      │" << endl;
 				cout << "\t│                                            │" << endl;
-				cout << "\t│ 소지 아이템 : 포션 " << Battle::potion << " , 허브 " << Battle::hub <<
+				cout << "\t│ Item : Potion " << Battle::potion << " , Hub " << Battle::hub <<
 					"\t      │" << endl <<
 					"\t└──────────────────────┘" << endl;
 			}
+			// 포켓몬이 있을 때 정보 출력
 			else
 			{
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 				cout << "\t┌──────────────────────┐" << endl;
-				cout << "\t│ 포켓몬 정보 : "; pOutPut(); cout << "\t\t\t      │" << endl;
-				cout << "\t│ 포켓몬 스탯 : 레벨 = " << Battle::pLevel << " , HP = " << Battle::pHealth << " , MP = " << Battle::pSkill << " │" << endl;
-				cout << "\t│ 소지 아이템 : 포션 " << Battle::potion << " , 허브 " << Battle::hub <<
+				cout << "\t│ Information : "; pOutPut(); cout << "\t\t\t      │" << endl;
+				cout << "\t│ Status : Level = " << Battle::pLevel << " , HP = " << Battle::pHealth << " , MP = " << Battle::pSkill << " │" << endl;
+				cout << "\t│ Item : Potion " << Battle::potion << " , Hub " << Battle::hub <<
 					"\t      │" << endl <<
 					"\t└──────────────────────┘" << endl;
 			}
@@ -668,7 +672,7 @@ void Map::fieldMap()
 
 			if (Event::cWinCount == 1 && Event::dWinCount == 1)
 			{
-				cout << "소년 A : 이제 포켓몬도 다 잡았고 나갈수 있는 곳도 없네.." << endl << "\t    집이나 가자. ";
+				cout << "Boy A : Now I've got Pokemon, and there's nowhere to go." << endl << "\t    I want to go home ";
 			}
 		}
 	} //while end
@@ -677,9 +681,9 @@ void Map::fieldMap()
 
 void Map::pOutPut() // 포켓몬 이름 출력 함수
 {
-	if (Event::pSelect == 1) cout << "파이리";
-	else if (Event::pSelect == 2) cout << "꼬부기";
-	else if (Event::pSelect == 3) cout << "피카츄";
+	if (Event::pSelect == 1) cout << "Charmander";
+	else if (Event::pSelect == 2) cout << "Squirtle";
+	else if (Event::pSelect == 3) cout << "Pikachu";
 }
 
 void Map::houseMapDrawing() // 집 맵 그리기 함수
@@ -734,23 +738,25 @@ void Map::houseMapDrawing() // 집 맵 그리기 함수
 		"\t│                                            │" << endl <<
 		"\t└──────────────────────┘" << endl;
 
+	// 포켓몬이 없을 때 정보 출력
 	if (Event::pSelect == 0)
 	{
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 		cout << "\t┌──────────────────────┐" << endl;
-		cout << "\t│ 포켓몬 정보 : 아직 포켓몬이 없습니다.      │" << endl;
+		cout << "\t│ Information : Don't have Pokemon.      │" << endl;
 		cout << "\t│                                            │" << endl;
-		cout << "\t│ 소지 아이템 : 포션 " << Battle::potion << " , 허브 " << Battle::hub <<
+		cout << "\t│ Item : Potion " << Battle::potion << " , Hub " << Battle::hub <<
 			"\t      │" << endl <<
 			"\t└──────────────────────┘" << endl;
 	}
+	// 포켓몬이 있을 때 정보 출력
 	else
 	{
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 		cout << "\t┌──────────────────────┐" << endl;
-		cout << "\t│ 포켓몬 정보 : "; pOutPut(); cout << "\t\t\t      │" << endl;
-		cout << "\t│ 포켓몬 스탯 : 레벨 = " << Battle::pLevel << " , HP = " << Battle::pHealth << " , MP = " << Battle::pSkill << " │" << endl;
-		cout << "\t│ 소지 아이템 : 포션 " << Battle::potion << " , 허브 " << Battle::hub <<
+		cout << "\t│ Information : "; pOutPut(); cout << "\t\t\t      │" << endl;
+		cout << "\t│ Status : Level = " << Battle::pLevel << " , HP = " << Battle::pHealth << " , MP = " << Battle::pSkill << " │" << endl;
+		cout << "\t│ Item : Potion " << Battle::potion << " , Hub " << Battle::hub <<
 			"\t      │" << endl <<
 			"\t└──────────────────────┘" << endl;
 	}
