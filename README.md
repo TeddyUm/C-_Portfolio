@@ -1,4 +1,6 @@
 # C-_TextGame_Pokemon
 My first game. Very simple old passhined text style game.
 
-<iframe width="956" height="538" src="https://www.youtube.com/watch?v=kNrMrEz98JU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<img src="https://github.com/TeddyUm/C-_TextGame_Pokemon/blob/master/1676522558768.jpg" width="500" height="300">
+
+<a href="https://www.youtube.com/watch?v=kNrMrEz98JU&t=3s">You tube Game play</a>
